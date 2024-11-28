@@ -32,9 +32,9 @@ We use the [RAVDESS Emotional Speech Audio dataset](https://www.kaggle.com/datas
 
 ### 3. **Audio Feature Extraction**
 - Uses `librosa` to extract and visualize:
-  - Waveform
   - Short-Time Fourier Transform (STFT)
-  - Spectrogram (in decibels)
+  - Mel Spectrogram (in decibels)
+  - MFCC
 
 ### 4. **Emotion Label Mapping**
 - Extracts emotion IDs from file names and maps them to human-readable labels.
