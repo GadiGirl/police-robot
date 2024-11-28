@@ -40,12 +40,30 @@ We use the [RAVDESS Emotional Speech Audio dataset](https://www.kaggle.com/datas
 - Extracts emotion IDs from file names and maps them to human-readable labels.
 - Visualizes the distribution of audio files across different emotions.
 
-### 5. **Deep Learning Preparation**
-- Prepares data for training by normalizing audio samples and encoding emotion labels.
+### 5. **Deep Learning Model Architecture **
+The project includes a **Simplified Convolutional Neural Network (CNN)** for speech emotion recognition. The model is designed to process 2D input features (e.g., spectrograms or MFCCs) and classify them into emotion categories.
 
----
+### **Model Design**
+- **Input Layer**:
+  - Accepts input data of shape `(height, width, channels)` (e.g., MFCC or spectrogram features).
+  - Configurable `input_shape` parameter to handle different feature dimensions.
 
-## **Installation**
-To run the project, you need to install the following dependencies:
-```bash
-pip install tensorflow tensorflow-datasets librosa soundfile resampy pyaudio
+- **Convolutional Layers**:
+  - Two convolutional layers with ReLU activation:
+    - **First Layer**:
+      - Filters: 32
+      - Kernel Size: (3, 3)
+      - MaxPooling: (2, 2)
+    - **Second Layer**:
+      - Filters: 64
+      - Kernel Size: (3, 3)
+      - MaxPooling: (2, 2)
+
+- **Flatten and Dense Layers**:
+  - Flattens the 2D feature maps into a 1D vector.
+  - A dense layer with 128 neurons and ReLU activation.
+  - Dropout (40%) for regularization and overfitting prevention.
+
+- **Output Layer**:
+  - Fully connected layer with `softmax` activation.
+  - Outputs probabilities for each emotion class (`num_labels`).
