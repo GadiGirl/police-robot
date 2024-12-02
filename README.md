@@ -26,7 +26,7 @@ We use the [RAVDESS Emotional Speech Audio dataset](https://www.kaggle.com/datas
 Description: The TESS dataset contains recordings of 200 target words spoken by two female speakers aged 26 and 64. Each word is recorded with a variety of emotional intonations, including anger, disgust, fear, happiness, pleasant surprise, sadness, and neutral.
 Number of Samples: 2800 audio files (200 words × 7 emotions × 2 speakers).
 Use Case: Useful for analyzing emotional variations in speech across different age groups.
-Link: TESS Dataset on Kaggle
+Link: https://www.kaggle.com/datasets/ejlok1/toronto-emotional-speech-set-tess
 
 ---
 
@@ -34,7 +34,7 @@ Link: TESS Dataset on Kaggle
 Description: The SAVEE database consists of audio recordings from four male speakers, expressing seven different emotions: anger, disgust, fear, happiness, sadness, surprise, and neutral. The recordings are phonetically balanced for consistency.
 Number of Samples: 480 utterances (120 per speaker).
 Use Case: Ideal for studying emotional differences in male speech patterns.
-Link: SAVEE Dataset on Kaggle
+Link: https://www.kaggle.com/datasets/barelydedicated/savee-database
 
 ---
 
