@@ -3,11 +3,12 @@
 
 # Speech Emotion Recognition with RAVDESS Dataset
 
-This project aims to develop a **speech emotion recognition system** using the **RAVDESS Emotional Speech Audio** dataset. Additionally, it includes a real-time audio recording module that uploads audio files to Google Drive. The system processes audio files to extract key features such as waveforms and spectrograms, which are later used for deep learning-based emotion classification.
+This project aims to develop a **speech emotion recognition system** using the multiple datasets. Additionally, it includes a real-time audio recording module that uploads audio files to Google Drive. The system processes audio files to extract key features such as waveforms and spectrograms, which are later used for deep learning-based emotion classification.
+Dataset Information
 
----
-
+Below is the information on the additional datasets used:
 ## **Dataset**
+1.RAVDESS
 We use the [RAVDESS Emotional Speech Audio dataset](https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio), which contains high-quality audio recordings labeled with eight emotions:
 - **Neutral**
 - **Calm**
@@ -19,6 +20,21 @@ We use the [RAVDESS Emotional Speech Audio dataset](https://www.kaggle.com/datas
 - **Surprised**
 
 ---
+
+2. TESS (Toronto Emotional Speech Set)
+Description: The TESS dataset contains recordings of 200 target words spoken by two female speakers aged 26 and 64. Each word is recorded with a variety of emotional intonations, including anger, disgust, fear, happiness, pleasant surprise, sadness, and neutral.
+Number of Samples: 2800 audio files (200 words × 7 emotions × 2 speakers).
+Use Case: Useful for analyzing emotional variations in speech across different age groups.
+Link: TESS Dataset on Kaggle
+
+3. SAVEE (Surrey Audio-Visual Expressed Emotion)
+Description: The SAVEE database consists of audio recordings from four male speakers, expressing seven different emotions: anger, disgust, fear, happiness, sadness, surprise, and neutral. The recordings are phonetically balanced for consistency.
+Number of Samples: 480 utterances (120 per speaker).
+Use Case: Ideal for studying emotional differences in male speech patterns.
+Link: SAVEE Dataset on Kaggle
+
+---
+
 
 ## **Key Features of the Project**
 ### 1. **Real-Time Audio Recording and Uploading**
